@@ -111,3 +111,19 @@ function addEntry() {
   document.getElementById("descInput").value = "";
   document.getElementById("amountInput").value = "";
 }
+function addGoal() {
+  const input = document.getElementById("goalInput");
+  const goalText = input.value.trim();
+
+  if (goalText === "") return;
+
+  const li = document.createElement("li");
+  li.textContent = goalText;
+
+  li.addEventListener("click", () => {
+    li.classList.toggle("goal-completed");
+  });
+
+  document.getElementById("goalList").appendChild(li);
+  input.value = "";
+}

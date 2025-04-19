@@ -391,4 +391,64 @@ main section {
   body {
     margin-left: 200px;  /* Shifts the page content to the right */
   }
+  /* Goals Tracker Styling */
+.goals-tracker {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .goals-tracker h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .goals-tracker input {
+    padding: 8px;
+    width: 60%;
+    max-width: 300px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .goals-tracker button {
+    padding: 8px 14px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .goals-tracker button:hover {
+    background-color: #388e3c;
+  }
+  
+  #goalList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  #goalList li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    border-left: 5px solid #4caf50;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+  
+  .goal-completed {
+    text-decoration: line-through;
+    color: #777;
+  }
   
