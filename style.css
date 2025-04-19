@@ -255,11 +255,18 @@ main section {
   }
   
   .income {
-    border-color: #28a745;
+    background-color: #d4edda; /* light green */
+    border-left: 6px solid #28a745;
+    color: #155724;
+    font-weight: bold;
   }
   
   .expense {
-    border-color: #dc3545;
+    background-color: #f8d7da; /* light red */
+    border-left: 6px solid #dc3545;
+    color: #721c24;
+    font-weight: bold;
   }
+  
   
   
