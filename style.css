@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #23647e;
     color: white;
     padding: 1.5rem 2rem;
     text-align: center;
@@ -60,7 +60,7 @@ header {
 }
 
 main section {
-  background-color: #ffffff;
+  background-color: #525661;
   padding: 1rem;
   border-radius: 8px;
   min-height: 150px;
@@ -338,7 +338,7 @@ main section {
     color: #00796b;
   }
   .quote-widget {
-    background-color: #5f2e54;
+    background-color: #d6a7cc;
     padding: 15px;
     border-radius: 12px;
     margin-top: 20px;
@@ -352,7 +352,7 @@ main section {
   
   .quote-widget blockquote {
     font-style: italic;
-    color: #f7bcaf;
+    color: #58271c;
     border-left: 5px solid #e65100;
     padding-left: 15px;
     margin: 0;
