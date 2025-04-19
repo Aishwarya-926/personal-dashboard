@@ -11,18 +11,23 @@
   </header>
 
   <div class="container">
-    <nav class="sidebar">
-      <ul>
-        <li>Home</li>
-        <li>Calendar</li>
-        <li>To-Do</li>
-        <li>Budget</li>
-        <li>Emails</li>
-      </ul>
-    </nav>
+    <aside class="sidebar">
+        <ul>
+          <li><a href="#quote">Home</a></li>
+          <li><a href="#calendar">Calendar</a></li>
+          <li><a href="#todo">To-Do List</a></li>
+          <li><a href="#budget">Budget Tracker</a></li>
+          <li><a href="#weather">Weather Widget</a></li>
+          <li><a href="#notifications">Notifications</a></li>
+          <li><a href="emails">Emailst</a></li>
+          
+          
+        </ul>
+      </aside>
+      
 
     <main class="main-content">
-        <section class="quote-widget">
+        <section id = "quote" class="quote-widget">
             <h2>Quote of the Day</h2>
             <img src="https://cdn-icons-png.flaticon.com/512/742/742751.png" alt="positive icon" class="quote-img">
 
@@ -32,7 +37,7 @@
             </blockquote>
           </section>
           
-        <section class="calendar-section">
+        <section id ="calendar" class="calendar-section">
             <h2>📅 Calendar</h2>
             <div id="calendar">
               <div id="calendar-header">
@@ -46,13 +51,13 @@
           </section>
           
       
-      <section class="todo">
+      <section id = "todo" class="todo">
 	<h2>To-Do List</h2>
 	<input type="text" id="taskInput" placeholder="Add a task">
 	<button onclick="addTask()">Add</button>
 	<ul id="taskList"></ul>
       </section>
-      <section class="budget">
+      <section id = "budget" class="budget">
         <h2>Budget Tracker</h2>
         <div class="input-group">
           <input type="text" id="descInput" placeholder="Description">
@@ -66,7 +71,7 @@
         <h3>Balance: ₹<span id="balance">0</span></h3>
         <ul id="budgetList"></ul>
       </section>
-      <section class="weather-widget">
+      <section id = "weather" class="weather-widget">
         <h2>Weather</h2>
         <div class="weather-card">
           <div class="weather-left">
@@ -80,7 +85,7 @@
         </div>
       </section>
       
-      <section class="notifications-section">
+      <section id ="notifications" class="notifications-section">
         <h2>Notifications</h2>
         <ul class="notifications-list">
           <li class="notification unread">🔔 Meeting at 4 PM</li>
@@ -89,7 +94,7 @@
         </ul>
       </section>
       
-      <section class="emails-section">
+      <section id = "emails" class="emails-section">
         <h2>Emails</h2>
         <div class="email-card">
           <h3>From: John Doe</h3>
