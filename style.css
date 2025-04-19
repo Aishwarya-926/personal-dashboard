@@ -354,21 +354,39 @@ main section {
     scroll-behavior: smooth;  /* Enables smooth scrolling */
   }
 /* Remove default hyperlink styling */
+/* Sidebar button styles */
 .sidebar a {
     text-decoration: none;  /* Removes underline */
-    color: white;  /* Makes the text white */
-    background-color: #e65100;  /* Background color for buttons */
-    padding: 10px 15px;  /* Adds padding inside the button */
-    margin: 5px 0;  /* Adds space between buttons */
-    border-radius: 8px;  /* Rounded corners */
-    display: block;  /* Makes the link take up the full width of the container */
+    color: white;  /* Text color */
+    background-color: #4caf50;  /* Subtle green background */
+    padding: 8px 12px;  /* Reduced size */
+    margin: 8px 0;  /* Adds space between buttons */
+    border-radius: 5px;  /* Rounded corners */
+    display: block;  /* Makes the link take up the full width */
     text-align: center;  /* Centers the text inside the button */
-    font-weight: bold;  /* Makes the text bold */
+    font-weight: normal;  /* Optional: Makes text weight normal */
+    transition: background-color 0.3s ease;  /* Smooth hover effect */
   }
   
-  /* Add hover effect for interactivity */
+  /* Hover effect */
   .sidebar a:hover {
-    background-color: #d32f2f;  /* Changes color on hover */
+    background-color: #388e3c;  /* Slightly darker green on hover */
   }
-     
+  
+  /* Sidebar container positioning */
+  .sidebar {
+    position: fixed;  /* Keeps sidebar fixed in place */
+    top: 0;
+    left: 0;
+    height: 100%;  /* Full height */
+    width: 200px;  /* Sidebar width */
+    background-color: #333;  /* Sidebar background */
+    padding-top: 20px;  /* Adds space at the top */
+    z-index: 1000;  /* Keeps sidebar above other content */
+  }
+  
+  /* Make the rest of the page content shift to the right */
+  body {
+    margin-left: 200px;  /* Shifts the page content to the right */
+  }
   
