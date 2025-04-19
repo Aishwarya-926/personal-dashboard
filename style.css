@@ -353,5 +353,22 @@ main section {
   html {
     scroll-behavior: smooth;  /* Enables smooth scrolling */
   }
-   
+/* Remove default hyperlink styling */
+.sidebar a {
+    text-decoration: none;  /* Removes underline */
+    color: white;  /* Makes the text white */
+    background-color: #e65100;  /* Background color for buttons */
+    padding: 10px 15px;  /* Adds padding inside the button */
+    margin: 5px 0;  /* Adds space between buttons */
+    border-radius: 8px;  /* Rounded corners */
+    display: block;  /* Makes the link take up the full width of the container */
+    text-align: center;  /* Centers the text inside the button */
+    font-weight: bold;  /* Makes the text bold */
+  }
+  
+  /* Add hover effect for interactivity */
+  .sidebar a:hover {
+    background-color: #d32f2f;  /* Changes color on hover */
+  }
+     
   
