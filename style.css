@@ -380,8 +380,8 @@ main section {
     top: 0;
     left: 0;
     height: 100%;  /* Full height */
-    width: 200px;  /* Sidebar width */
-    background-color: #333;  /* Sidebar background */
+    width: 180px;  /* Sidebar width */
+    background-color: #ffffff;  /* Sidebar background */
     padding-top: 20px;  /* Adds space at the top */
     z-index: 1000;  /* Keeps sidebar above other content */
     font-family: Arial, sans-serif;  /* Optional: better font */
