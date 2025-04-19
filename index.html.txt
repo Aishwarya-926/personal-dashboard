@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Dashboard</h1>
+  </header>
+
+  <div class="container">
+    <nav class="sidebar">
+      <ul>
+        <li>Home</li>
+        <li>Calendar</li>
+        <li>To-Do</li>
+        <li>Budget</li>
+        <li>Emails</li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <section class="calendar">📅 Calendar</section>
+      <section class="todo">
+	<h2>To-Do List</h2>
+	<input type="text" id="taskInput" placeholder="Add a task">
+	<button onclick="addTask()">Add</button>
+	<ul id="taskList"></ul>
+      </section>
+      <section class="budget">💰 Budget Tracker</section>
+      <section class="emails">✉️ Notifications & Emails</section>
+      <section class="custom">🌤️ Weather / 🎯 Goals</section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
