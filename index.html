@@ -42,7 +42,21 @@
 	<button onclick="addTask()">Add</button>
 	<ul id="taskList"></ul>
       </section>
-      <section class="budget">💰 Budget Tracker</section>
+      <section class="budget">
+        <h2>Budget Tracker</h2>
+        <div class="input-group">
+          <input type="text" id="descInput" placeholder="Description">
+          <input type="number" id="amountInput" placeholder="Amount">
+          <select id="typeInput">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+          <button onclick="addEntry()">Add</button>
+        </div>
+        <h3>Balance: ₹<span id="balance">0</span></h3>
+        <ul id="budgetList"></ul>
+      </section>
+      
       <section class="notifications-section">
         <h2>Notifications</h2>
         <ul class="notifications-list">

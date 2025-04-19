@@ -88,3 +88,26 @@ function addTask() {
     taskInput.value = "";
   }
 }
+
+let balance = 0;
+
+function addEntry() {
+  const desc = document.getElementById("descInput").value.trim();
+  const amount = parseFloat(document.getElementById("amountInput").value);
+  const type = document.getElementById("typeInput").value;
+
+  if (!desc || isNaN(amount)) return;
+
+  const li = document.createElement("li");
+  li.textContent = `${desc}: ₹${amount}`;
+  li.classList.add(type);
+
+  document.getElementById("budgetList").appendChild(li);
+
+  balance += type === "income" ? amount : -amount;
+  document.getElementById("balance").textContent = balance.toFixed(2);
+
+  // Clear inputs
+  document.getElementById("descInput").value = "";
+  document.getElementById("amountInput").value = "";
+}
