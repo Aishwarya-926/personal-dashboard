@@ -56,3 +56,11 @@ function nextMonth() {
 }
 
 renderCalendar();
+
+document.querySelectorAll('.notification.unread').forEach(note => {
+    note.addEventListener('click', () => {
+      note.classList.remove('unread');
+      note.classList.add('read');
+    });
+  });
+  
