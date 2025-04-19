@@ -8,7 +8,6 @@
 <body>
     <header>
         <div class="header-content">
-          <img src="https://i.imgur.com/6o5EJkU.png" alt="Dashboard Logo" class="header-logo">
           <h1>My Personal Dashboard</h1>
           <p class="tagline">Stay on top of your life, one widget at a time.</p>
 
@@ -148,6 +147,29 @@
       // Clear inputs
       document.getElementById("descInput").value = "";
       document.getElementById("amountInput").value = "";
+    }
+  </script>
+  <script>
+    function addGoal() {
+      const input = document.getElementById("goalInput");
+      const goalText = input.value.trim();
+  
+      if (goalText !== "") {
+        const list = document.getElementById("goalList");
+        const listItem = document.createElement("li");
+        listItem.textContent = goalText;
+  
+        // Optional: add remove button
+        const removeBtn = document.createElement("button");
+        removeBtn.textContent = "❌";
+        removeBtn.style.marginLeft = "10px";
+        removeBtn.onclick = () => listItem.remove();
+  
+        listItem.appendChild(removeBtn);
+        list.appendChild(listItem);
+  
+        input.value = "";
+      }
     }
   </script>
   

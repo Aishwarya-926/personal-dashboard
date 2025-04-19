@@ -4,8 +4,8 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #7dc7e4;
+    color: rgb(2, 2, 2);
     padding: 1rem 2rem;
     text-align: center;
     position: sticky;
@@ -21,16 +21,13 @@ header {
     flex-wrap: wrap;
   }
   
-  .header-logo {
-    height: 40px;
-    width: auto;
-    border-radius: 8px;
-  }
+  
+  
   
   .tagline {
     font-size: 14px;
     margin-top: 5px;
-    color: #e8f5e9;
+    color: #272927;
   }
   
 .container {
@@ -39,7 +36,7 @@ header {
 
 .sidebar {
   width: 200px;
-  background-color: #f4f4f4;
+  background-color: #6ec2b0;
   padding: 1rem;
   height: 100vh;
 }
@@ -62,7 +59,7 @@ header {
 }
 
 main section {
-  background-color: #e8e8e8;
+  background-color: #d1a1a1;
   padding: 1rem;
   border-radius: 8px;
   min-height: 150px;
@@ -90,7 +87,7 @@ main section {
 .todo {
     margin: 20px;
     padding: 15px;
-    background: #fffaf0;
+    background: #ebc373;
     border-radius: 10px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   }
@@ -473,5 +470,25 @@ main section {
   .goal-completed {
     text-decoration: line-through;
     color: #777;
+  }
+  #goals input, #goals button {
+    padding: 8px;
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  #goals ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #goals li {
+    background-color: #e8f5e9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
