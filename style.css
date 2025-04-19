@@ -316,6 +316,33 @@ main section {
     font-size: 2rem;
     color: #00796b;
   }
-    
+  .quote-widget {
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quote-widget h2 {
+    color: #e65100;
+    margin-bottom: 12px;
+  }
+  
+  .quote-widget blockquote {
+    font-style: italic;
+    color: #4e342e;
+    border-left: 5px solid #e65100;
+    padding-left: 15px;
+    margin: 0;
+  }
+  
+  .quote-widget footer {
+    margin-top: 8px;
+    text-align: right;
+    font-weight: bold;
+    color: #bf360c;
+  }
+      
   
   
