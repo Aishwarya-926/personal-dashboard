@@ -114,16 +114,20 @@ main section {
     margin: 8px 0;
     border-radius: 6px;
     background-color: #f5f5f5;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
   .notification.unread {
-    background-color: #e0f7fa;
+    background-color: #e0f7fa; /* Light blue for unread */
     font-weight: bold;
+    color: #000; /* Dark text */
   }
   
   .notification.read {
-    color: gray;
+    background-color: #f5f5f5; /* Light grey for read */
+    color: gray; /* Gray text for read notifications */
   }
+  
   
   .email-card {
     background-color: #fdfdfd;
