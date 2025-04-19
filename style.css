@@ -62,3 +62,36 @@ main section {
 .done {
   text-decoration: line-through;
 }
+
+.calendar-section {
+    margin: 20px;
+    padding: 15px;
+    background: #eef7ff;
+    border-radius: 10px;
+  }
+  
+  #calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #calendar-days, #calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  #calendar-days div {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #calendar-dates div {
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }

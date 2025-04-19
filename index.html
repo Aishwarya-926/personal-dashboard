@@ -22,7 +22,20 @@
     </nav>
 
     <main class="main-content">
-      <section class="calendar">📅 Calendar</section>
+        <section class="calendar-section">
+            <h2>📅 Calendar</h2>
+            <div id="calendar">
+              <div id="calendar-header">
+                <button onclick="prevMonth()">&#8592;</button>
+                <span id="month-year"></span>
+                <button onclick="nextMonth()">&#8594;</button>
+              </div>
+              <div id="calendar-days"></div>
+              <div id="calendar-dates"></div>
+            </div>
+          </section>
+          
+      
       <section class="todo">
 	<h2>To-Do List</h2>
 	<input type="text" id="taskInput" placeholder="Add a task">

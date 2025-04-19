@@ -9,3 +9,50 @@ function addTask() {
   document.getElementById("taskList").appendChild(li);
   input.value = "";
 }
+
+const monthYear = document.getElementById("month-year");
+const calendarDates = document.getElementById("calendar-dates");
+const calendarDays = document.getElementById("calendar-days");
+
+const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let date = new Date();
+
+function renderCalendar() {
+  const year = date.getFullYear();
+  const month = date.getMonth();
+
+  // Show month and year
+  monthYear.textContent = `${date.toLocaleString("default", {
+    month: "long",
+  })} ${year}`;
+
+  // Show day names
+  calendarDays.innerHTML = days.map(day => `<div>${day}</div>`).join("");
+
+  // Show dates
+  const firstDay = new Date(year, month, 1).getDay();
+  const lastDate = new Date(year, month + 1, 0).getDate();
+
+  let html = "";
+  for (let i = 0; i < firstDay; i++) {
+    html += `<div></div>`;
+  }
+
+  for (let d = 1; d <= lastDate; d++) {
+    html += `<div>${d}</div>`;
+  }
+
+  calendarDates.innerHTML = html;
+}
+
+function prevMonth() {
+  date.setMonth(date.getMonth() - 1);
+  renderCalendar();
+}
+
+function nextMonth() {
+  date.setMonth(date.getMonth() + 1);
+  renderCalendar();
+}
+
+renderCalendar();
