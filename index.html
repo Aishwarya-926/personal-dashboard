@@ -157,21 +157,39 @@
       if (goalText !== "") {
         const list = document.getElementById("goalList");
         const listItem = document.createElement("li");
-        listItem.textContent = goalText;
   
-        // Optional: add remove button
+        // Create checkbox
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.style.marginRight = "10px";
+  
+        // Toggle line-through when checkbox is clicked
+        checkbox.addEventListener("change", () => {
+          listItem.style.textDecoration = checkbox.checked ? "line-through" : "none";
+          listItem.style.opacity = checkbox.checked ? "0.6" : "1";
+        });
+  
+        // Create text
+        const span = document.createElement("span");
+        span.textContent = goalText;
+  
+        // Remove button
         const removeBtn = document.createElement("button");
         removeBtn.textContent = "❌";
-        removeBtn.style.marginLeft = "10px";
+        removeBtn.style.marginLeft = "auto";
         removeBtn.onclick = () => listItem.remove();
   
+        // Append all to list item
+        listItem.appendChild(checkbox);
+        listItem.appendChild(span);
         listItem.appendChild(removeBtn);
-        list.appendChild(listItem);
   
+        list.appendChild(listItem);
         input.value = "";
       }
     }
   </script>
+  
   
 </body>
 </html>
