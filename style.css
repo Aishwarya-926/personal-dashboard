@@ -63,6 +63,67 @@ main section {
   text-decoration: line-through;
 }
 
+/* To-Do Section Styling */
+.todo {
+    margin: 20px;
+    padding: 15px;
+    background: #fffaf0;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  
+  #taskInput {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Task List Styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  li {
+    padding: 12px 16px;
+    margin: 8px 0;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  }
+  
+  li:hover {
+    background-color: #d1ffd1; /* Light green on hover */
+    transform: scale(1.05); /* Slightly enlarge for better feedback */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+  
+  /* Mark as Completed Task Styling */
+  li.completed {
+    background-color: #c8e6c9; /* Light green for completed tasks */
+    color: gray; /* Gray text */
+    text-decoration: line-through; /* Strikethrough for completed tasks */
+  }
+  
 .calendar-section {
     margin: 20px;
     padding: 15px;
@@ -110,11 +171,18 @@ main section {
   }
   
   .notification {
-    padding: 10px;
+    padding: 12px 16px;
     margin: 8px 0;
     border-radius: 6px;
     background-color: #f5f5f5;
     transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .notification:hover {
+    background-color: #b2ebf2; /* Light blue when hovered */
+    transform: scale(1.05); /* Slightly enlarge for better click feedback */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for more depth */
   }
   
   .notification.unread {
@@ -137,4 +205,6 @@ main section {
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   }
+  
+
   

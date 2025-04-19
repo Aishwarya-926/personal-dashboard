@@ -66,4 +66,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
+// Add task to the list
+function addTask() {
+  const taskInput = document.getElementById("taskInput");
+  const taskText = taskInput.value.trim();
   
+  if (taskText) {
+    // Create new task item
+    const li = document.createElement("li");
+    li.textContent = taskText;
+
+    // Add click event to mark task as completed
+    li.addEventListener("click", () => {
+      li.classList.toggle("completed");
+    });
+
+    // Add the new task to the list
+    document.getElementById("taskList").appendChild(li);
+
+    // Clear the input field after adding the task
+    taskInput.value = "";
+  }
+}
